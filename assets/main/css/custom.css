@@ -1,0 +1,24 @@
+/* Anchor link styling */
+@media (max-width: 900px) {
+    .anchor-link {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .anchor-link {
+        opacity: 0;
+        text-decoration: none;
+        margin-left: -1.35em;
+    }
+
+    h1:hover .anchor-link,
+    h2:hover .anchor-link,
+    h3:hover .anchor-link,
+    h4:hover .anchor-link,
+    h5:hover .anchor-link,
+    h6:hover .anchor-link {
+        opacity: 1;
+        text-decoration: none;
+    }
+}

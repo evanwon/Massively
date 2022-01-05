@@ -10,7 +10,7 @@ into the {body} of the default.hbs template --}}
     <section class="post">
 
         <header class="major">
-            <span class="date">{{date published_at format="MMMM D, YYYY"}}{{#match updated_at "!=" published_at}} <em>(Updated: {{date updated_at format="MMMM D, YYYY"}})</em>{{/match}}</span>
+            <span class="date">{{date published_at format="MMMM D, YYYY"}}{{#match (date published_at format="l") "!=" (date updated_at format="l")}} <em>(Updated: {{date updated_at format="MMMM D, YYYY"}})</em>{{/match}}</span>
             <h1>{{title}}</h1>
         </header>
 

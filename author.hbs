@@ -17,21 +17,21 @@ into the {body} of the default.hbs template --}}
         {{/if}}
         <div class="author-meta">
             {{#if location}}
-            <div class="author-location icon fa-map-pin">{{location}} <span class="bull">&bull;</span></div>
+            <div class="author-location"><i class="icon fas fa-map-marker-alt"></i>{{location}} <span class="bull">&bull;</span></div>
             {{/if}}
             <div class="author-stats">
                 {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}} <span class="bull">&bull;</span>
             </div>
             {{#if website}}
-            <a href="{{url}}" class="icon fa-globe" title="Website"><span class="label">Website</span></a>
+            <a href="{{website}}" class="icon fas fa-link" title="Website"><span class="label">Website</span></a>
             {{/if}}
             {{#if twitter}}
-            <a href="{{twitter_url}}" class="icon fa-twitter" title="Twitter"><span class="label">Twitter</span></a>
+            <a href="{{twitter_url}}" class="icon fab fa-twitter" title="Twitter"><span class="label">Twitter</span></a>
             {{/if}}
             {{#if facebook}}
-            <a href="{{facebook_url}}" class="icon fa-facebook" title="Facebook"><span class="label">Facebook</span></a>
+            <a href="{{facebook_url}}" class="icon fab fa-facebook" title="Facebook"><span class="label">Facebook</span></a>
             {{/if}}
-            <a href="https://feedly.com/i/subscription/feed/{{url absolute="true"}}rss/" class="icon fa-rss" target="_blank" rel="noopener"><span class="label" title="RSS">RSS</span></a>
+            <a href="https://feedly.com/i/subscription/feed/{{url absolute="true"}}rss/" class="icon fas fa-rss" target="_blank" rel="noopener"><span class="label" title="RSS">RSS</span></a>
         </div>
     </header>
     {{/author}}

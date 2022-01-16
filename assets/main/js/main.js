@@ -147,7 +147,7 @@
 				'<div id="navPanel">' +
 					'<nav>' +
 					'</nav>' +
-					'<a href="#navPanel" class="close"></a>' +
+					'<a href="#navPanel" class="close"><i class="fas fa-times"></i></a>' +
 				'</div>'
 			)
 				.appendTo($body)

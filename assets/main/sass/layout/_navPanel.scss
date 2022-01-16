@@ -30,6 +30,7 @@
 		&:before {
 			content: '\f0c9';
 			margin-right: 0.5rem;
+			font-family: 'Font Awesome 5 Free';
 		}
 
 		&.alt {
@@ -115,8 +116,11 @@
 			width: 7rem;
 
 			&:before {
-				content: '\f00d';
-				font-size: 1.25rem;
+				//commenting these out because I think they are redundant
+				// with me adding an <i> within the anchor now in JS
+				//content: '\f00d';
+				//font-size: 1.25rem;
+				//font-family: 'Font Awesome 5 Free';
 			}
 
 			&:hover {
